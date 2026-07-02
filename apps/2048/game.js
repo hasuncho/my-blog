@@ -177,7 +177,7 @@ function transpose(b) {
  * 전체 보드 이동
  * ------------------------------------------------------- */
 function move(direction) {
-  if (inputLocked || isGameOver) return;
+  if (isGameOver) return;
   if (hasWon && !keepPlayingAfterWin) return;
 
   const previousBoard = cloneBoard(board);
