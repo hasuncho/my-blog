@@ -1,0 +1,11 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Framework-free static blog that renders Markdown posts in the browser.",
+  "scripts": {
+    "build": "node scripts/build-posts.js",
+    "dev": "node scripts/dev-server.js"
+  }
+}
