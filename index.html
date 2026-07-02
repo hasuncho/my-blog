@@ -17,14 +17,20 @@
 <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
-<header class="site-header">
-  <a href="#/" class="site-title">My Blog</a>
-  <button id="theme-toggle" class="theme-toggle" type="button" aria-label="라이트/다크 모드 전환">🌓</button>
-</header>
-<main id="app" class="site-main"></main>
-<footer class="site-footer">
-  <p>&copy; 2026 My Blog</p>
-</footer>
+<div class="shell">
+  <aside class="sidebar">
+    <a href="#/" class="sidebar__brand">
+      <span class="sidebar__title">My Blog</span>
+    </a>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="라이트/다크 모드 전환">🌓</button>
+  </aside>
+  <div class="content-area">
+    <main id="app" class="site-main"></main>
+    <footer class="site-footer">
+      <p>&copy; 2026 My Blog</p>
+    </footer>
+  </div>
+</div>
 <script src="posts/posts-data.js"></script>
 <script src="js/dom.js"></script>
 <script src="js/theme.js"></script>
